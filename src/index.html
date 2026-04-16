@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meteo Katherine</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <h1>Meteo Katherine</h1>
+      <p class="subtitle">Cerca una città e visualizza il meteo attuale.</p>
+
+      <form id="weather-form" class="search-form">
+        <label for="city-input">Nome città</label>
+        <div class="search-row">
+          <input
+            id="city-input"
+            name="city"
+            type="text"
+            placeholder="Es. Roma"
+            maxlength="60"
+            required
+          />
+          <button type="submit">Cerca</button>
+        </div>
+      </form>
+
+      <p id="status-message" class="status" aria-live="polite"></p>
+
+      <section id="weather-result" class="weather-result hidden" aria-live="polite">
+        <h2 id="result-city"></h2>
+        <p><strong>Temperatura:</strong> <span id="result-temp"></span></p>
+        <p><strong>Vento:</strong> <span id="result-wind"></span></p>
+        <p><strong>Condizione:</strong> <span id="result-description"></span></p>
+        <p><strong>Orario rilevazione:</strong> <span id="result-time"></span></p>
+      </section>
+
+      <section class="recent-searches">
+        <h2>Ricerche recenti</h2>
+        <div id="recent-searches-list" class="recent-list"></div>
+      </section>
+    </section>
+  </main>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
