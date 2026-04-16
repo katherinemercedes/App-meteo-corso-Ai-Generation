@@ -1,7 +1,7 @@
 {
-  "name": "weather-app-junior",
+  "name": "weather-app",
   "version": "1.0.0",
-  "description": "Simple junior weather app using Open-Meteo APIs",
+  "description": "Weather app using Open-Meteo APIs",
   "type": "module",
   "scripts": {
     "test": "node --test"
@@ -9,8 +9,7 @@
   "keywords": [
     "weather",
     "javascript",
-    "open-meteo",
-    "junior-project"
+    "open-meteo"
   ],
   "author": "",
   "license": "MIT"
